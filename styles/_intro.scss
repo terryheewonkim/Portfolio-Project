@@ -45,6 +45,14 @@ nav {
   }
 }
 
+.intro-image {
+  @include flex(flex-end, center, row);
+  svg {
+    width: 90%;
+    height: auto;
+  }
+}
+
 .splash {
   position: absolute;
   top: 0;
@@ -70,4 +78,52 @@ nav {
 .intro-text,
 .intro-image {
   flex: 1 1 40rem;
+}
+
+// ANIMATIONS
+
+#plant-left {
+  animation: leaf 1500ms ease infinite alternate;
+}
+
+#plant-right {
+  animation: leaf 1500ms ease infinite alternate 500ms;
+}
+
+#me {
+  animation: me 1500ms ease infinite alternate;
+  transform-origin: bottom;
+}
+
+#clock-arrow {
+  animation: clock 1500ms infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@keyframes leaf {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
