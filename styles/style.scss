@@ -19,8 +19,15 @@ $gray-text: #2c2c2c;
 // Imports
 @import "global";
 @import "intro";
+@import "projects";
 
 // Media Queries
+@media screen and (max-width: 1004px) {
+  nav {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 915px) {
   html {
     font-size: 53%;
@@ -78,5 +85,14 @@ $gray-text: #2c2c2c;
 
   .intro-image {
     text-align: center;
+  }
+
+  .travelly,
+  .photography {
+    flex: 1 1 50rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
