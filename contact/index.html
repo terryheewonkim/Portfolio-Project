@@ -26,31 +26,21 @@
         </div>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a class="active" href="./index.html">Projects</a></li>
-          <li><a href="../contact/">Contact</a></li>
+          <li><a href="../projects/">Projects</a></li>
+          <li><a class="active" href="./index.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section class="projects">
-      <div class="travelly">
-        <a href="https://terryheewonkim.github.io/Travelly-Project/">
-          <h2>Travelly</h2>
-        </a>
-        <a href="https://terryheewonkim.github.io/Travelly-Project/">
-          <img src="../img/travelly.png" alt="Travelly project" />
-        </a>
-      </div>
-      <div class="photography">
-        <a href="https://terryheewonkim.github.io/Photography-Project/">
-          <h2>Maisie Todd Photography</h2>
-        </a>
-        <a href="https://terryheewonkim.github.io/Photography-Project/">
-          <img
-            src="../img/elena-joy.jpg"
-            alt="Maisie Todd photography project"
-          />
-        </a>
-      </div>
+    <section class="form-section">
+      <form action="https://formspree.io/f/xbjqrypq" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </section>
     <footer>
       <h4>Dev Chuck &copy; 2021</h4>

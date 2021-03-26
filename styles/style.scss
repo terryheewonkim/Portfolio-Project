@@ -20,6 +20,8 @@ $gray-text: #2c2c2c;
 @import "global";
 @import "intro";
 @import "projects";
+@import "contact";
+@import "footer";
 
 // Media Queries
 @media screen and (max-width: 1004px) {
@@ -94,5 +96,15 @@ $gray-text: #2c2c2c;
       width: 100%;
       height: 100%;
     }
+  }
+
+  // Contact section
+  .form-section {
+    margin: 0 1.5rem;
+  }
+
+  form {
+    padding: 0;
+    width: 100%;
   }
 }
