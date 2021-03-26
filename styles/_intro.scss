@@ -46,11 +46,12 @@ nav {
 }
 
 .intro-image {
-  @include flex(flex-end, center, row);
-  svg {
-    width: 90%;
-    height: auto;
-  }
+  text-align: end;
+}
+
+svg {
+  width: 90%;
+  height: auto;
 }
 
 .splash {
